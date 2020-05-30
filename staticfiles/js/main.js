@@ -29,12 +29,15 @@ function openNav() {
     document.querySelector('.animate__animated').classList.remove('animate__fadeOutDown');
     document.querySelector('.unordered').classList.remove('animate__animated', 'animate__fadeOutDown');
     document.querySelector('.copyright').classList.remove('animate__animated', 'animate__fadeOutDown');
+    document.querySelector('.theme').classList.remove('animate__animated', 'animate__fadeOut');
     document.querySelector('.animate__animated').classList.add('animate__fadeInUp');
     document.querySelector('.animate__animated').style.setProperty('animation-delay', '0.2s');
     document.querySelector('.unordered').classList.add('animate__animated', 'animate__fadeInUp');
     document.querySelector('.unordered').style.setProperty('animation-delay', '0.8s');
     document.querySelector('.copyright').classList.add('animate__animated', 'animate__fadeInUp');
     document.querySelector('.copyright').style.setProperty('animation-delay', '1.2s');
+    document.querySelector('.theme').classList.add('animate__animated', 'animate__fadeIn');
+    document.querySelector('.theme').style.setProperty('animation-delay', '1.2s');
 }
 
 function closeNav() {
@@ -42,12 +45,15 @@ function closeNav() {
     document.querySelector('.animate__animated').classList.remove('animate__fadeInUp');
     document.querySelector('.unordered').classList.remove('animate__animated', 'animate__fadeInUp')
     document.querySelector('.copyright').classList.remove('animate__animated', 'animate__fadeInUp')
+    document.querySelector('.theme').classList.remove('animate__animated', 'animate__fadeIn');
     document.querySelector('.animate__animated').classList.add('animate__fadeOutDown');
     document.querySelector('.animate__animated').style.setProperty('animation-delay', '0.8s');
     document.querySelector('.unordered').classList.add('animate__animated', 'animate__fadeOutDown')
     document.querySelector('.unordered').style.setProperty('animation-delay', '0.4s');
     document.querySelector('.copyright').classList.add('animate__animated', 'animate__fadeOutDown')
     document.querySelector('.copyright').style.setProperty('animation-delay', '0s');
+    document.querySelector('.theme').classList.add('animate__animated', 'animate__fadeOut');
+    document.querySelector('.theme').style.setProperty('animation-delay', '0s');
 }
 // Testimonial-logic
 $(document).ready(function () {
@@ -101,7 +107,6 @@ AOS.init({
 });
 
 //Team Section
-
 $('#one').click(function () {
     $('#modal-container').removeAttr('class').addClass('one');
     $('#rahul').css('display', 'block');
@@ -163,23 +168,35 @@ $('#modal-container-associate').click(function () {
 
 
 //Dark mode
-
+let darkMode = localStorage.getItem("darkMode");
 var checkbox = document.querySelector('input[name=theme]');
-console.log("TEST");
+
+if(darkMode === "enabled"){
+    $('.logo-holder').css({ "display": "none" });
+    $('.logo-holder-dark').css({ "display": "inline-flex" });
+    $('.services-headings button').removeClass('btn-5').addClass('btn-4');
+    checkbox.checked = true;
+    document.documentElement.setAttribute('data-theme', 'dark');
+}
+
 checkbox.addEventListener('change', function () {
-    if (this.checked) {
-        console.log(this);
+    darkMode = localStorage.getItem("darkMode")
+    if (darkMode !== "enabled") {
         trans();
         $('.logo-holder').css({ "display": "none" });
         $('.logo-holder-dark').css({ "display": "inline-flex" });
         $('.services-headings button').removeClass('btn-5').addClass('btn-4');
+        $('.box-form-right button').removeClass('btn-5').addClass('btn-4');
         document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem("darkMode", "enabled");
     } else {
         trans();
         $('.logo-holder').css({ "display": "block" });
         $('.logo-holder-dark').css({ "display": "none" });
         $('.services-headings button').removeClass('btn-4').addClass('btn-5');
+        $('.box-form-right button').removeClass('btn-4').addClass('btn-5');
         document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem("darkMode", "null");
     }
 })
 
@@ -189,3 +206,53 @@ let trans = () => {
         document.documentElement.classList.remove('transition');
     }, 1000)
 }
+
+//Services
+$('.services-headings button').click(function(){
+    $('.services-headings button').removeClass('active');
+    $(this).addClass('active');
+    
+    $('.services-content-desc').removeClass('active');
+    $("#" + $(this).attr("id") + "-1").addClass('active');
+});
+
+//Page Animations
+
+// function pageTransition() {
+//     var tl = gsap.timeline();
+//     tl.to('ul.transition li', { duration: .5, scaleY: 1, transformOrigin: "bottom left", stagger: .2 })
+//     tl.to('ul.transition li', { duration: .5, scaleY: 0, transformOrigin: "bottom left", stagger: .2, delay: .1 })
+// }
+
+// function contentAnimation() {
+    
+// }
+
+// function delay(n) {
+//     n = n || 2000;
+//     return new Promise(done => {
+//         setTimeout(() => {
+//             done();
+//         }, n);
+//     });
+// }
+// barba.init({
+//     sync: true,
+
+//     transitions: [{
+//         async leave(data) {
+//             const done = this.async();
+//             pageTransition();
+//             await delay(1500);
+//             done();
+//         },
+
+//         async enter(data) {
+//             contentAnimation();
+//         },
+
+//         async once(data) {
+//             contentAnimation();
+//         }
+//     }]
+// })
