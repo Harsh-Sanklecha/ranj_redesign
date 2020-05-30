@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Exo+2&family=Oswald&family=Roboto&family=Unna&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ed14658cf0d2b0012b98c84&product=inline-share-buttons" async="async"></script>
+
+    <title>RANJ & Associates Comapny Secretaries</title>
+</head>
+
+<body data-spy="scroll" data-target=".sidenav" data-barba="wrapper">
+    <script>
+        document.body.className = 'fade';
+    </script>
+    <header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="animate__animated mobile-menu-top">
+            <a href="{% url 'index' %}" class="nav-link">Prolouge</a>
+            <a href="{% url 'services' %}" class="nav-link">What We Do</a>
+            <a href="{% url 'team' %}" class="nav-link">Our Team</a>
+            <a href="#section4" class="nav-link">Careers</a>
+            <a href="{% url 'blog' %}" class="nav-link">Blog</a>
+            <a href="#section6" class="nav-link">News Bulletin</a>
+            <a href="{% url 'contact' %}" class="nav-link">Reach Us</a>
+        </div>
+        <div class="mobile-menu-bottom">
+            <ul class="unordered">
+                <li><a href="https://www.facebook.com/RANJAssociates/" target="_blank"><span></span> Facebook</a></li>
+                <li><a href="https://twitter.com/RanjAssociates?lang=en" target="_blank"><span></span> Twitter</a></li> <br>
+                <li><a href="https://in.linkedin.com/company/ranj-&-associates" target="_blank"><span></span> LinkedIn</a></li>
+            </ul>
+            <p class="copyright">© Copyright RANJ. All rights reserved.</p>
+        </div>
+        <div class="theme">
+            <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+        </div>
+    </div>
+    <div class="nav" id="navBar">
+        <div class="animate__animated animate__fadeInLeft logo-holder-dark"  id="logoHolderDark">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'img/logo-dark.png' %}" class="logo-img-dark" id="logoImgDark">
+            </a>
+        </div>
+        <div class="animate__animated animate__fadeInLeft logo-holder" id="logoHolder">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'img/ranj-1.png' %}" id="logoImg" class="logo-img">
+            </a>
+        </div>
+        <div class="logocls" onclick="openNav()" id="logoCls">
+            <a href="#" class="mobile-nav">
+                <span id="ham1" class="animate__animated animate__fadeInRight ham1"></span>
+                <span id="ham2" class="animate__animated animate__fadeInRight ham2"></span>
+                <span id="ham3" class="animate__animated animate__fadeInRight ham3"></span>
+            </a>
+        </div>
+    </div>
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    </header>
+<main data-barba="container" data-barba-namespace="home">
+{% block content %}
+{% endblock %}
+</main>
+    <footer>
+        <div class="d-flex flex-column justify-content-md-around footer">
+            <div class="d-md-flex  footer-top">
+                <div class="p-4 footer-logo">
+                    <h6>RANJ</h6>
+                    <a href="https://www.google.com/maps/dir//ranjcs/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bcb99c303455555:0xa477d14086b5eb9d?sa=X&ved=2ahUKEwj57Yzs9sbpAhWNTX0KHRRjDucQ9RcwDnoECAsQFg"
+                        target="__blank">
+                        404, 4th Floor, Sai Sandhya Apts
+                        B/s Shanti TVS Showroom
+                        Street-9 Ashok Nagar Road
+                        Himayath Nagar, Hyderabad-500029
+                    </a>
+                    <h5><a href="tel:+040-6555-2655"><i class="fa fa-phone" style="font-size: 20px;"></i> : <span>040-6655
+                            2655</span> </a> <br>
+                       <a href="mailto:consult@ranjcs.com"><i class="fa fa-envelope"></i> : <span>consult@ranjcs.com</span></a>
+                    </h5>
+                </div>
+                <div class="p-4 usefull">
+                    <h6>SITE MAP</h6>
+                    <ul>
+                        <li><a href="{% url 'index' %}"><span></span>About Us</a></li>
+                        <li><a href="{% url 'services' %}"><span></span>key Offerings</a></li>
+                        <li><a href="{% url 'team' %}"><span></span>Our Team</a></li>
+                        <li><a href="{% url 'contact' %}"><span></span>Reach Us</a></li>
+                        <li><a href="#"><span></span>Legal & Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="p-4 follow-us">
+                    <h6>FOLLOW US</h6>
+                    <ul>
+                        <li><a href="https://www.facebook.com/RANJAssociates/" target="_blank"><span></span>Facebook</a></li>
+                        <li><a href="https://twitter.com/RanjAssociates?lang=en" target="_blank"><span></span>Twitter</a></li>
+                        <li><a href="https://in.linkedin.com/company/ranj-&-associates" target="_blank"><span></span>LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <div class="p-4 mailchimp">
+                    <h6>CORPORATE UPDATES E-NEWS LETTER</h6>
+                    <p>To keep yourself updated about the latest regulatory updates, subscribe to our newsletter by
+                        submiting your e-mail
+                        address below.
+                    </p>
+                    <!-- Begin Mailchimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet"
+                        type="text/css">
+                    <style type="text/css">
+                        #mc_embed_signup {
+                            width: 100%;
+                            margin-top: -20px;
+                        }
+
+                        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                                            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                    </style>
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://ranjcs.us4.list-manage.com/subscribe/post?u=43cfb80365c0d6f4bd5ef40c7&amp;id=d16a921524"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <!-- <label for="mce-EMAIL">Subscribe</label> -->
+                                <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Enter your E-mail id"
+                                    required>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px; margin-left:0;" aria-hidden="true"><input
+                                        type="text" name="b_43cfb80365c0d6f4bd5ef40c7_d16a921524" tabindex="-1"
+                                        value=""></div>
+                                <div class="clear"><input type="submit" value="Submit" name="subscribe"
+                                        id="mc-embedded-subscribe" class="button_mail"></div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--End mc_embed_signup-->
+                </div>
+            </div>
+            <div class="d-flex justify-content-between footer-bottom">
+                <div>
+                    <p>© Copyright RANJ. All rights reserved.</p>
+                </div>
+                <div>
+                    <h6><a href="http://harshcreations.tk/" target="_blank">A concept by Harsh Sanklecha</a></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (e) {
+            document.body.className = '';
+        });
+    </script>
+</body>        
+</html>
