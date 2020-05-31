@@ -387,6 +387,7 @@ ul.transition li{
   transform: translate(-50%,0);
 }
 .inner-test h3{
+  font-family: $heading;
   position: relative;
   left: 50%;
   padding-top: 20px;
@@ -407,15 +408,18 @@ ul.transition li{
   transform: translate(-50%,0%);
 }
 .slider p{
+  font-family: $paragraphs;
   position: relative;
   line-height: 32px;  
-  font-size: 20px;
+  font-size: 18px;
 }
 .slider h5{
+  font-family: $heading;
   padding-top: 40px;
   font-size: 24px;
 }
 .slider h6{
+  font-family: $paragraphs;
   color: #808080;
   padding-bottom: 40px;
 }
@@ -643,13 +647,14 @@ ul.transition li{
     text-align: center;
 
     i{
+      margin-top: 30px;
       font-size: 46px;
       color: $secondaryColor;
       padding: 0;
     }
     h4{
-      font-family: $paragraphs;
-      font-size: 30px;
+      font-family: $heading;
+      font-size: 32px;
       color: var(--headColor);
       padding: 10px 0;
     }
@@ -665,7 +670,7 @@ ul.transition li{
     h2{
       font-family: $heading;
       color: var(--headColor);
-      font-size: 46px;
+      font-size: 50px;
       padding: 10px 0 0 0;
     }
     a{
@@ -713,8 +718,14 @@ ul.transition li{
     font-size: 50px;
     text-align: center;
   }
+  p{
+    font-family: $heading;
+    font-size: 28px;
+    color: var(--headColor);
+    margin-top: 10px;
+  }
   ul{
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 18px;
     line-height: 37px;
     color: var(--paraColor);
@@ -899,7 +910,7 @@ span:nth-child(4){
   position: relative;
   margin: 20px;
   width: 300px;
-  height: 400px;
+  height: 420px;
   background: var(--conatiners);
   color: var(--headColor);
   border: 1px solid var(--border);
@@ -920,7 +931,7 @@ span:nth-child(4){
   }
   p{
     font-family: $paragraphs;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 0;
   }
   h6 span{
@@ -1081,7 +1092,7 @@ span:nth-child(4){
     }
     h5{
       font-family: $heading;
-      font-size: 17px;
+      font-size: 18px;
       color: #d8def3;
     }
     p{
@@ -1181,7 +1192,7 @@ span:nth-child(4){
     }
     h5{
       font-family: $heading;
-      font-size: 17px;
+      font-size: 18px;
       color: #d8def3;
     }
     p{
@@ -1280,7 +1291,7 @@ span:nth-child(4){
   position: relative;
   margin: 20px;
   width: 300px;
-  height: 400px;
+  height: 420px;
   background: var(--conatiners);
   color: var(--headColor);
   border: 1px solid var(--border);
@@ -1301,7 +1312,7 @@ span:nth-child(4){
   }
   p{
     font-family: $paragraphs;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 0;
   }
   h6 span{
@@ -1439,7 +1450,7 @@ span:nth-child(4){
             margin:0 0 5px 0;
 
             h3{
-              font-size: 28px;
+              font-size: 24px;
               color: var(--headColor);
               text-decoration: none;
             }
@@ -1450,7 +1461,7 @@ span:nth-child(4){
             overflow: hidden;
 
             h4{
-              font-size: 20px;
+              font-size: 18px;
               color: var(--contarst);
             }
           }
@@ -1461,7 +1472,7 @@ span:nth-child(4){
             overflow: hidden;
 
             h6{
-              font-size: 15px;
+              font-size: 14px;
               color: var(--contarst)
             }
           }
@@ -1600,7 +1611,7 @@ span:nth-child(4){
       text-align: center;
       letter-spacing: 1px;
       font-weight: 600;
-      font-size: 46px;
+      font-size: 50px;
       color: #fff;
     }
   }
@@ -1624,8 +1635,8 @@ span:nth-child(4){
       padding: 20px;
       font-family: $paragraphs;
       color: var(--paraColor);
-      line-height: 35px;
-      font-size: 16px;
+      line-height: 40px;
+      font-size: 18px;
     }
     p::first-letter {
       font-size: 400%;
@@ -1668,7 +1679,8 @@ span:nth-child(4){
       }
       h6{
         font-family: $paragraphs;
-        font-size: 15px;
+        font-size: 18px;
+        line-height: 32px;
         color: var(--paraColor);
       }
       a{
@@ -1683,7 +1695,7 @@ span:nth-child(4){
         color: var(--secondaryColor);
       }
       i{
-        font-size: 15px;
+        font-size: 18px;
         color: var(--paraColor);
         transition: 0.4s;
       }
@@ -1692,13 +1704,14 @@ span:nth-child(4){
       }
       h5{
         font-family: $paragraphs;
-        line-height: 24px;
+        line-height: 32px;
         margin: 15px 0 0 5px;
-        font-size: 15px;
+        font-size: 18px;
         transition: 0.4s;
       }
       h5 a{
-        font-size: 15px;
+        font-size: 16px;
+        color: var(--paraColor);
       }
     }
     .line-through-contact{
@@ -2173,6 +2186,11 @@ span:nth-child(4){
       padding-left: 40px;
     }
   }
+  #text-container-bottom{
+    width: 110%;
+    left: 45%;
+    padding: 0 !important;
+  }
   .text{
     width: 100%;
     height: 80%;
@@ -2202,17 +2220,24 @@ span:nth-child(4){
     display: grid;
   }
   .card-lead{
-    height: 300px;
-    width: 250px;
+    height: 350px;
+    width: 300px;
 
     img{
       width: 80%;
+    }
+    p{
+      font-size: 16px;
+    }
+    button{
+      display: none;
     }
   }
   .line-through{
     display: none;
   }
   .associate-body-inside{
+    margin-top: 150px;
     height: 200vh;
 
     h3{
@@ -2225,11 +2250,17 @@ span:nth-child(4){
     }
   }
   .card-lead-associate{
-    height: 300px;
-    width: 250px;
+    height: 350px;
+    width: 300px;
 
     img{
       width: 80%;
+    }
+    p{
+      font-size: 16px;
+    }
+    button{
+      display: none;
     }
   }
   .line-through-associate{
@@ -2237,6 +2268,15 @@ span:nth-child(4){
   }
   .card-body-associate{
     display: grid;
+  }
+  .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-title h3{
+    padding: 10px 0;
+  }
+  .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-over h4{
+    padding: 10px 0;
+  }
+  .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-date h6{
+    margin-top: 10px;
   }
   .blog-container .inside-blog-container .tools{
     display: none !important;
@@ -2260,8 +2300,11 @@ span:nth-child(4){
     display: none;
   }
   .contact-container .box-form .box-form-right{
-    width: 55%;
+    width: 100%;
     transform: translateX(40%);
+  }
+  .contact-container .box-form .box-form-right #label-email{
+    transform: translateX(110px);
   }
   .twitter-embed .twitter{
     margin-top: 20px;
@@ -2274,6 +2317,9 @@ span:nth-child(4){
   }
   .twitter-embed .twitter a{
     font-size: 20px;
+  }
+  .pagination .next{
+    overflow: hidden;
   }
   .pagination .next .next-inside{
     right: 0;
