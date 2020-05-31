@@ -469,6 +469,7 @@ ul.transition li {
 }
 
 .inner-test h3 {
+  font-family: "Oswald", sans-serif;
   position: relative;
   left: 50%;
   padding-top: 20px;
@@ -492,17 +493,20 @@ ul.transition li {
 }
 
 .slider p {
+  font-family: "Roboto", sans-serif;
   position: relative;
   line-height: 32px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .slider h5 {
+  font-family: "Oswald", sans-serif;
   padding-top: 40px;
   font-size: 24px;
 }
 
 .slider h6 {
+  font-family: "Roboto", sans-serif;
   color: #808080;
   padding-bottom: 40px;
 }
@@ -780,14 +784,15 @@ ul.transition li {
 }
 
 .twitter-embed .twitter i {
+  margin-top: 30px;
   font-size: 46px;
   color: #2bbaec;
   padding: 0;
 }
 
 .twitter-embed .twitter h4 {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
   color: var(--headColor);
   padding: 10px 0;
 }
@@ -806,7 +811,7 @@ ul.transition li {
 .twitter-embed .twitter h2 {
   font-family: "Oswald", sans-serif;
   color: var(--headColor);
-  font-size: 46px;
+  font-size: 50px;
   padding: 10px 0 0 0;
 }
 
@@ -867,8 +872,15 @@ ul.transition li {
   text-align: center;
 }
 
+.services-content-desc p {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  color: var(--headColor);
+  margin-top: 10px;
+}
+
 .services-content-desc ul {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 18px;
   line-height: 37px;
   color: var(--paraColor);
@@ -1178,7 +1190,7 @@ span:nth-child(4) {
   position: relative;
   margin: 20px;
   width: 300px;
-  height: 400px;
+  height: 420px;
   background: var(--conatiners);
   color: var(--headColor);
   border: 1px solid var(--border);
@@ -1202,7 +1214,7 @@ span:nth-child(4) {
 
 .card-lead p {
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 0;
 }
 
@@ -1412,7 +1424,7 @@ span:nth-child(4) {
 
 .modal .modal-desc h5 {
   font-family: "Oswald", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   color: #d8def3;
 }
 
@@ -1530,7 +1542,7 @@ span:nth-child(4) {
 
 .modal-associate .modal-desc-associate h5 {
   font-family: "Oswald", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   color: #d8def3;
 }
 
@@ -1706,7 +1718,7 @@ span:nth-child(4) {
   position: relative;
   margin: 20px;
   width: 300px;
-  height: 400px;
+  height: 420px;
   background: var(--conatiners);
   color: var(--headColor);
   border: 1px solid var(--border);
@@ -1730,7 +1742,7 @@ span:nth-child(4) {
 
 .card-lead-associate p {
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 0;
 }
 
@@ -1900,7 +1912,7 @@ span:nth-child(4) {
 }
 
 .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-title h3 {
-  font-size: 28px;
+  font-size: 24px;
   color: var(--headColor);
   text-decoration: none;
 }
@@ -1912,7 +1924,7 @@ span:nth-child(4) {
 }
 
 .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-over h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--contarst);
 }
 
@@ -1924,7 +1936,7 @@ span:nth-child(4) {
 }
 
 .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-date h6 {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--contarst);
 }
 
@@ -2075,7 +2087,7 @@ span:nth-child(4) {
   text-align: center;
   letter-spacing: 1px;
   font-weight: 600;
-  font-size: 46px;
+  font-size: 50px;
   color: #fff;
 }
 
@@ -2101,8 +2113,8 @@ span:nth-child(4) {
   padding: 20px;
   font-family: "Roboto", sans-serif;
   color: var(--paraColor);
-  line-height: 35px;
-  font-size: 16px;
+  line-height: 40px;
+  font-size: 18px;
 }
 
 .post-detail-container .post-detail-desc p::first-letter {
@@ -2152,7 +2164,8 @@ span:nth-child(4) {
 
 .contact-container .box-form .box-form-left h6 {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 32px;
   color: var(--paraColor);
 }
 
@@ -2171,7 +2184,7 @@ span:nth-child(4) {
 }
 
 .contact-container .box-form .box-form-left i {
-  font-size: 15px;
+  font-size: 18px;
   color: var(--paraColor);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -2183,15 +2196,16 @@ span:nth-child(4) {
 
 .contact-container .box-form .box-form-left h5 {
   font-family: "Roboto", sans-serif;
-  line-height: 24px;
+  line-height: 32px;
   margin: 15px 0 0 5px;
-  font-size: 15px;
+  font-size: 18px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .contact-container .box-form .box-form-left h5 a {
-  font-size: 15px;
+  font-size: 16px;
+  color: var(--paraColor);
 }
 
 .contact-container .box-form .line-through-contact {
@@ -2738,6 +2752,11 @@ span:nth-child(4) {
   .text-container p {
     padding-left: 40px;
   }
+  #text-container-bottom {
+    width: 110%;
+    left: 45%;
+    padding: 0 !important;
+  }
   .text {
     width: 100%;
     height: 80%;
@@ -2768,16 +2787,23 @@ span:nth-child(4) {
     display: grid;
   }
   .card-lead {
-    height: 300px;
-    width: 250px;
+    height: 350px;
+    width: 300px;
   }
   .card-lead img {
     width: 80%;
+  }
+  .card-lead p {
+    font-size: 16px;
+  }
+  .card-lead button {
+    display: none;
   }
   .line-through {
     display: none;
   }
   .associate-body-inside {
+    margin-top: 150px;
     height: 200vh;
   }
   .associate-body-inside h3 {
@@ -2789,11 +2815,17 @@ span:nth-child(4) {
     border-bottom: none;
   }
   .card-lead-associate {
-    height: 300px;
-    width: 250px;
+    height: 350px;
+    width: 300px;
   }
   .card-lead-associate img {
     width: 80%;
+  }
+  .card-lead-associate p {
+    font-size: 16px;
+  }
+  .card-lead-associate button {
+    display: none;
   }
   .line-through-associate {
     display: none;
@@ -2801,6 +2833,15 @@ span:nth-child(4) {
   .card-body-associate {
     display: -ms-grid;
     display: grid;
+  }
+  .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-title h3 {
+    padding: 10px 0;
+  }
+  .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-over h4 {
+    padding: 10px 0;
+  }
+  .blog-container .inside-blog-container .blog-post .post-container .post-desc .post-date h6 {
+    margin-top: 10px;
   }
   .blog-container .inside-blog-container .tools {
     display: none !important;
@@ -2825,9 +2866,13 @@ span:nth-child(4) {
     display: none;
   }
   .contact-container .box-form .box-form-right {
-    width: 55%;
+    width: 100%;
     -webkit-transform: translateX(40%);
             transform: translateX(40%);
+  }
+  .contact-container .box-form .box-form-right #label-email {
+    -webkit-transform: translateX(110px);
+            transform: translateX(110px);
   }
   .twitter-embed .twitter {
     margin-top: 20px;
@@ -2840,6 +2885,9 @@ span:nth-child(4) {
   }
   .twitter-embed .twitter a {
     font-size: 20px;
+  }
+  .pagination .next {
+    overflow: hidden;
   }
   .pagination .next .next-inside {
     right: 0;
