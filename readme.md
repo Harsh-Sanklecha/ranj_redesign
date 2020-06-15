@@ -7,5 +7,3 @@ The following are the new features added apart from the UI changes
 -> Twitter integreation
 -> Social Sharing on blog
 
-
-This prototype model can be acessed through this link -->>  http://harshsanklecha.pythonanywhere.com/
